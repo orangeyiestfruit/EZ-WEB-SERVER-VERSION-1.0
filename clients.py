@@ -9,3 +9,4 @@ while True:
     print(data)
     f = open("website.html","w")
     f.write(data.decode('utf-8'))
+    f.close()
