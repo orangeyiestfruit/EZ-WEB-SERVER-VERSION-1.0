@@ -1,4 +1,5 @@
 import socket
+import os
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 addr = 'localhost', 10000
 sock.bind(addr)
@@ -10,3 +11,5 @@ while True:
     f = open("website.html","w")
     f.write(data.decode('utf-8'))
     f.close()
+    os.system("website.html")
+
